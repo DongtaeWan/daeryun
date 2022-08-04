@@ -1,0 +1,11 @@
+.header {
+  height: 100px;
+  background: #000;
+  display: flex;
+  color: #fff;
+  justify-content: space-between;
+}
+
+.logo {
+  color: red;
+}
