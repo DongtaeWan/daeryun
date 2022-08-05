@@ -2,6 +2,7 @@ import React from "react";
 import styles from "./Section1.module.scss";
 
 const Section1 = () => {
+  const test = process.env.NEXT_PUBLIC_API_URL;
   return (
     <>
       <section className={styles.section1}>
@@ -12,7 +13,7 @@ const Section1 = () => {
           <div className={styles.section1_content1}>
             <img src="/images/main_1.png" alt="" />
             <p>대검찰청&#183;고검</p>
-            <p>차장검사출신</p>
+            <p>{test}</p>
           </div>
           <div className="section1_content2">
             <img src="/images/main_2.png" alt="" />
@@ -32,7 +33,7 @@ const Section1 = () => {
         </div>
 
         <div className={styles.mause}>
-          <div class="wheel"></div>
+          <div className="wheel"></div>
         </div>
       </section>
     </>
