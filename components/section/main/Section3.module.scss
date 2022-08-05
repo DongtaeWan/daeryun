@@ -1,0 +1,58 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@200;300;400;500;600;700;900&display=swap");
+
+.section3 {
+  padding: 60px 20px;
+  .section3_wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .section3_top {
+      h3 {
+        text-align: center;
+        font-size: 42px;
+        font-weight: normal;
+        font-family: "Noto Serif KR", serif;
+        strong {
+          font-size: 90px;
+          color: #083551;
+        }
+      }
+      p {
+        font-size: 24px;
+        font-weight: 300;
+      }
+    }
+    .section3_card_container {
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
+      .section3_card {
+        max-width: 215px;
+        height: 450px;
+        overflow: hidden;
+        background-image: url("/images/김인원.png");
+        background-size: cover;
+        background-position: center;
+        background-color: rgba(213, 213, 213, 0.3);
+        display: flex;
+        align-items: flex-end;
+        > div {
+          width: 100%;
+          background: rgba(0, 0, 0, 0.5);
+          color: #fff;
+          padding: 20px 15px;
+          .section3_card_top {
+            font-size: 18px;
+            font-weight: normal;
+            display: flex;
+            justify-content: space-between;
+            > div {
+              h4 {
+                font-weight: normal;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
